@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
 /*--------RESET---------*/
 *{
@@ -28,22 +28,29 @@ header{
     z-index: 10;
 }
 
-header h1{
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 45px;
+.icono{
+    display: flex;
+    align-items: center;
 }
 
-header img{
-    height: 100px;
-    width: 100px;
+.icono img{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.nombre-negocio{
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 45px;
 }
 
 header nav ul{
     list-style: none;
     display: flex;
     margin: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header nav ul li{
@@ -77,6 +84,7 @@ header nav ul li a{
     border: 2px solid white;
     padding: 25px;
     margin: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .hero p{
@@ -88,6 +96,7 @@ header nav ul li a{
     color: white;
     background-color: black;
     padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .sobre-nosotros{
