@@ -266,10 +266,6 @@ footer{
     header{
         flex-direction: column;
     }
-    .hero h1{
-        font-size: 45px;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width:560px) {
@@ -279,6 +275,13 @@ footer{
     
     header nav ul li{
         margin: 5px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hero h1{
+        font-size: 35px;
         text-align: center;
     }
 }
