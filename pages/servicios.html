@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Carniceria y Verduleria "La Única"</title>
 </head>
 
 <body>
-
     <header>
-        <h1>"La Única"</h1>
+        <div class="icono">
+            <a href="../index.html"><img class="" src="../img/icono.jpeg" alt="icono del negocio"></a>
+            <h1 class="nombre-negocio">La Única</h1>
+        </div>
         <nav>
             <!--Listas-->
             <!--Lista Desordenada-->
+            <!--Enlaces relativos / Relativos-->
             <ul>
-                <!--Item de la lista-->
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="./servicios.html">Servicios</a></li>
@@ -24,9 +29,8 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <section>
+        <section class="servicios">
             <ul>
                 <li><a href="./granja.html">Granja</a></li>
                 <li><a href="./carniceria.html">Carniceria</a></li>
@@ -34,21 +38,134 @@
                 <li><a href="./almacen.html">Almacén</a></li>
             </ul>
         </section>
+        <section class="granja">
+            <h2>Granja</h2>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 1</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 2</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 3</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 4</h3>
+                <a href="">Agregar</a></img>
+            </div>
+        </section>
+        <section class="carniceria">
+            <h2>Carniceria</h2>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 1</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 2</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Procuto 3</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 4</h3>
+                <a href="">Agregar</a></img>
+            </div>
+        </section>
+        <section class="verduleria">
+            <h2>Verduleria</h2>
+            <div>
+                <img src="" alt="">
+                <h3>Procuto 1</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 2</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 3</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 4</h3>
+                <a href="">Agregar</a></img>
+            </div>
+        </section>
+        <section class="almacen">
+            <h2>Almacen</h2>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 1</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 2</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 3</h3>
+                <a href="">Agregar</a></img>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Producto 4</h3>
+                <a href="">Agregar</a></img>
+            </div>
+        </section>
         <div class="fixed">
             <a href="https://wa.me/+5491121841123"><img src="../img/whatsapp.png" alt=""></a>
         </div>
     </main>
-
     <footer>
-        <div>
+        <div class="info">
             <h2>REDES SOCIALES</h2>
-            <a href="https://www.facebook.com/milton.giovanni.7" target="_blank"><img src="../img/facebook.png" alt="Icono Facebook"></a>
-            <a href="https://www.instagram.com/miltokis/" target="_blank"><img src="../img/instagram.png" alt="Icono Instagram"></a>
-            <h3>CONTACTO</h3>
-            <ul>
+            <a href="https://www.facebook.com/milton.giovanni.7" target="_blank"><img src="../img/facebook.png"
+                    alt="Icono Facebook"></a>
+            <a href="https://www.instagram.com/miltokis/" target="_blank"><img src="../img/instagram.png"
+                    alt="Icono Instagram"></a>
+            <div class="contacto">
+                <h3>CONTACTO</h3>
+                <div class="icons">
+                    <a href="callto:45459002"><img src="../img/telefono.png" alt="Icono telefono"></a>
+                    <p>4545-9002</p>
+                </div>
+                <div class="icons">
+                    <a href="mailto:milton_xsiempre@hotmail.com"><img src="../img/email.png" alt="icono email"></a>
+                    <p>milton_xsiempre@hotmail.com</p>
+                </div>
+                <div class="icons">
+                    <a
+                        href="https://www.google.com/maps/place/Ruiz+Huidobro+3643,+C1430CJQ+CABA/@-34.5497039,-58.4845815,17z/data=!4m6!3m5!1s0x95bcb6952119a4d7:0xd1093a8fcda5473d!8m2!3d-34.5497039!4d-58.4845815!16s%2Fg%2F11fl8mfdfq?authuser=0"><img
+                            src="../img/ubicacion.png" alt="Icono ubicacion"></a>
+                    <p>Saavedra-CABA-Buenos Aires</p>
+                </div>
+                <ul>
 
-            </ul>
+                </ul>
+            </div>
         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatem.</p>
     </footer>
+    <!--Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>
