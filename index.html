@@ -19,8 +19,8 @@
                 <a href="./index.html"><img src="./img/icono.jpeg" alt=""></a>
                 <a class="navbar-brand" href="./index.html">La Única</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,13 +29,15 @@
                             <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./pages/sobrenosotros.html">Sobre nosotros</a>
+                            <a class="nav-link active" aria-current="page" href="./pages/sobrenosotros.html">Sobre
+                                nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./pages/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./pages/dondenosencontramos.html">¿Donde nos encontramos?</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="./pages/dondenosencontramos.html">¿Donde nos encontramos?</a>
                         </li>
                     </ul>
                 </div>
@@ -44,9 +46,51 @@
     </header>
     <main>
         <section class="hero">
-            <h1 class="subtitulo">Carniceria-Verduleria</h1>
-            <p>"La Única"</p>
-            <a href="./pages/hacetupedido.html">Hace tu pedido</a>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active d-item">
+                        <img src="./img/local.jpeg" class="d-block w-100 d-img" alt="slider 1">
+                        <div class=" d-flex carousel-caption top-0 mt-4">
+                            <p class="mt-5 fs-3 text-uppercase">Carniceria-Verduleria</p>
+                            <h1 class="display-1 fw-bolder text-capitalize">La Única</h1>
+                            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Hace tu pedido</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-item">
+                        <img src="./img/carniceria1.jpeg" class="d-block w-100 d-img" alt="slider 1">
+                        <div class="d-flex carousel-caption top-0 mt-4">
+                            <p class="mt-5 fs-3 text-uppercase">Carniceria-Verduleria</p>
+                            <h1 class="display-1 fw-bolder text-capitalize">La Única</h1>
+                            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Hace tu pedido</button>
+                        </div>
+                    </div><div class="carousel-item d-item">
+                        <img src="./img/frutas.jpeg" class="d-block w-100 d-img" alt="slider 1">
+                        <div class="d-flex carousel-caption top-0 mt-4">
+                            <p class="mt-5 fs-3 text-uppercase">Carniceria-Verduleria</p>
+                            <h1 class="display-1 fw-bolder text-capitalize">La Única</h1>
+                            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Hace tu pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
         <section class="sobre-nosotros">
             <img src="./img/carniceria.jpg" alt="">
@@ -60,22 +104,22 @@
                 <div class="producto-card">
                     <img src="./img/milanesas.jpg" alt="">
                     <h3>Producto 1</h3>
-                    <a href=" ">Agregar</a>
+                    <a href="./pages/servicios.html">Agregar</a>
                 </div>
                 <div class="producto-card">
                     <img src="./img/huevos.jpg" alt="">
                     <h3>Producto 2</h3>
-                    <a href="">Agregar</a>
+                    <a href="./pages/servicios.html">Agregar</a>
                 </div>
                 <div class="producto-card">
                     <img src="./img/papa.webp" alt="">
                     <h3>Producto 3</h3>
-                    <a href="">Agregar</a>
+                    <a href="./pages/servicios.html">Agregar</a>
                 </div>
                 <div class="producto-card">
                     <img src="./img/pechugaspollo.webp" alt="">
                     <h3>Producto 4</h3>
-                    <a href="">Agregar</a>
+                    <a href="./pages/servicios.html">Agregar</a>
                 </div>
             </div>
         </section>
@@ -110,7 +154,6 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="info">
             <h2>Nuestras redes sociales:</h2>
@@ -120,7 +163,7 @@
             <a href="https://www.instagram.com/miltokis/" target="_blank"><img src="./img/instagram.png"
                     alt="Icono Instagram"></a>
             <div class="contacto">
-                <h3>CONTACTO</h3>
+                <h3>Contacto</h3>
                 <div class="icons">
                     <a href="callto:45459002"><img src="./img/telefono.png" alt="Icono telefono"></a>
                 </div>
