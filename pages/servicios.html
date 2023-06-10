@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!---Bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Carniceria y Verduleria "La Única"</title>
 </head>
 
 <body>
-    <header>
+    <header id="productos">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a href="../index.html"><img src="../img/icono.jpeg" alt=""></a>
                 <a class="navbar-brand" href="../index.html">La Única</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./sobrenosotros.html">Sobre nosotros</a>
+                            <a class="nav-link active" aria-current="page" href="./sobrenosotros.html">Sobre
+                                nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
@@ -33,7 +36,8 @@
                             <a class="nav-link active" aria-current="page" href="./hacetupedido.html">Hace tu pedido</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./dondenosencontramos.html">¿Donde nos encontramos?</a>
+                            <a class="nav-link active" aria-current="page" href="./dondenosencontramos.html">¿Donde nos
+                                encontramos?</a>
                         </li>
                     </ul>
                 </div>
@@ -41,41 +45,48 @@
         </nav>
     </header>
     <main>
-        <section class="servicios1">
-            <h1>Servicios</h1>
-            <section class="servicios">
-                <ul>
-                    <li><a href="#granja">Granja</a></li>
-                    <li><a href="#carniceria">Carniceria</a></li>
-                    <li><a href="#verduleria">Verduleria</a></li>
-                    <li><a href="#almacen">Almacén</a></li>
-                </ul>
+        <section>
+            <section  class="servicios1">
+                <div class="items">
+                    <ul>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#granja">Granja</a></li>
+                        <li><a href="#carniceria">Carniceria</a></li>
+                        <li><a href="#verduleria">Verduleria</a></li>
+                        <li><a href="#almacen">Almacén</a></li>
+                    </ul>
+                </div>
+                <div class="titulo-servicios">
+                    <h1>Servicios</h1>
+                </div>
             </section>
-        </section>
-        <section id="granja" class="catalogo">
-            <h2>Granja</h2>
-            <div class="producto-contenedor">
-                <div class="producto-card">
-                    <img src="../img/pechugapollo2.png" alt="">
-                    <h3>Producto 1</h3>
-                    <a href="">Agregar</a></img>
-                </div>
-                <div class="producto-card">
-                    <img src="../img/milanesas2.jpg" alt="">
-                    <h3>Producto 2</h3>
-                    <a href="">Agregar</a></img>
-                </div>
-                <div class="producto-card">
-                    <img src="../img/huevos2.jpg" alt="">
-                    <h3>Producto 3</h3>
-                    <a href="">Agregar</a></img>
-                </div>
-                <div class="producto-card">
-                    <img src="../img/salchichasviena.jpg" alt="">
-                    <h3>Producto 4</h3>
-                    <a href="">Agregar</a></img>
+            <section class="titulo-granja">
+                <h2 id="granja">Granja</h2>
+            <div class="catalogo">
+                <div class="producto-contenedor">
+                    <div class="producto-card">
+                        <img src="../img/pechugapollo2.png" alt="">
+                        <h3>Producto 1</h3>
+                        <a href="">Agregar</a></img>
+                    </div>
+                    <div class="producto-card">
+                        <img src="../img/milanesas2.jpg" alt="">
+                        <h3>Producto 2</h3>
+                        <a href="">Agregar</a></img>
+                    </div>
+                    <div class="producto-card">
+                        <img src="../img/huevos2.jpg" alt="">
+                        <h3>Producto 3</h3>
+                        <a href="">Agregar</a></img>
+                    </div>
+                    <div class="producto-card">
+                        <img src="../img/salchichasviena.jpg" alt="">
+                        <h3>Producto 4</h3>
+                        <a href="">Agregar</a></img>
+                    </div>
                 </div>
             </div>
+            </section>
         </section>
         <section id="carniceria" class="catalogo">
             <h2>Carniceria</h2>
@@ -173,7 +184,9 @@
                     <a href="mailto:milton_xsiempre@hotmail.com"><img src="../img/email.png" alt="icono email"></a>
                 </div>
                 <div class="icons">
-                    <a href="https://www.google.com/maps/place/Ruiz+Huidobro+3643,+C1430CJQ+CABA/@-34.5497039,-58.4845815,17z/data=!4m6!3m5!1s0x95bcb6952119a4d7:0xd1093a8fcda5473d!8m2!3d-34.5497039!4d-58.4845815!16s%2Fg%2F11fl8mfdfq?authuser=0"><img src="../img/ubicacion.png" alt="Icono ubicacion"></a>
+                    <a
+                        href="https://www.google.com/maps/place/Ruiz+Huidobro+3643,+C1430CJQ+CABA/@-34.5497039,-58.4845815,17z/data=!4m6!3m5!1s0x95bcb6952119a4d7:0xd1093a8fcda5473d!8m2!3d-34.5497039!4d-58.4845815!16s%2Fg%2F11fl8mfdfq?authuser=0"><img
+                            src="../img/ubicacion.png" alt="Icono ubicacion"></a>
                 </div>
             </div>
             <div class="text-center">
@@ -184,6 +197,9 @@
         </div>
     </footer>
     <!--Bootstrap js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

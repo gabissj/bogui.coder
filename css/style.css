@@ -68,9 +68,15 @@ header nav{
 }
 
 .btn{
+    width: 150px;
+    height: 60px;
     background-color: black;
     border-color: black;
-    color: white
+    border-radius: 15px;
+}
+
+.btn a{
+    color: white;
 }
 
 .sobre-nosotros{
@@ -79,10 +85,17 @@ header nav{
     align-items: center;
 }
 
+.sobre-nosotros div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .sobre-nosotros p{
     font-size: 25px;
-    width: 45%;
-    margin: 50px;
+    width: 85%;
+    margin: 40px;
 }
 
 .sobre-nosotros img{
@@ -91,11 +104,25 @@ header nav{
     margin: 120px;
 }
 
+.sobre-nosotros button{
+    background-color: black;
+    border-color: ;
+    height: 55px;
+    width: 120px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 4px;
+}
+
+.sobre-nosotros a{
+    color: white;
+}
+
 .productos h2{
     text-align: center;
     background-color: #223843;
     font-size: 30px;
-    color: white;
+    color: rgb(253, 245, 234);
     padding: 10px;
 }
 
@@ -114,11 +141,18 @@ header nav{
     box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
     -webkit-box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
     -moz-box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
+    border-radius: 11px;
+}
+
+.producto-contenedor div{
+    background-color: white;
 }
 
 .productos div img{
     width: 100%;
     height: 270px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .productos div h3{
@@ -135,7 +169,7 @@ h4{
     text-align: center;
     background-color: #223843;
     font-size: 30px;
-    color: white;
+    color: rgb(253, 245, 234);
     padding: 10px;
 }
 
@@ -206,6 +240,7 @@ h4{
 
 .fixed{
     position: fixed;
+    z-index: 1;
     right: 50px;
     bottom: 50px;
 }
@@ -236,18 +271,24 @@ div .text-center{
 
 .info{
     text-align: center;
+
+}
+
+.info a{
+    box-flex: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 p{
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 /*!-----MEDIA QUERY-----*/
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1165px) {
     .grid-galeria{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 220px;
@@ -272,19 +313,27 @@ p{
     }
 }
 
-@media screen and (max-width:700px) {
-    header{
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:560px) {
-    header nav ul{
-        flex-direction: column;
+@media screen and (max-width: 767px) {
+    .grid-galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 220px;
     }
 
-    header nav ul li{
-        margin: 5px;
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .sobre-nosotros{
+        flex-direction: column;
+        padding: 50px;
+    }
+    .sobre-nosotros img{
+        width: 75%;
+        height: 400px;
+    }
+    .sobre-nosotros p{
+        width: 70%;
         text-align: center;
     }
 }
@@ -296,7 +345,7 @@ p{
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:479px) {
     .grid-galeria{
         grid-template-columns: 1fr;
     }
@@ -304,6 +353,24 @@ p{
     .grid-item{
         grid-column: span 1;
         grid-row: span 1;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .info h2{
+        font-size: 22px;
+    }
+
+    .info h3{
+        font-size: 22px;
+    }
+
+    .text-center{
+        font-size: 12px;
+    }
+
+    .info .icons{
+        font-size: 15px;
     }
 }
 
@@ -315,13 +382,15 @@ main{
 .quienessomos h1{
     text-align: center;
     color: #223843;
+    padding: 30px;
 }
 
 .quienessomos h2{
     text-align: center;
     background-color: #223843;
     font-size: 30px;
-    color: white;
+    color: rgb(253, 245, 234);
+    padding: 10px;
 }
 
 .info-nos{
@@ -348,21 +417,32 @@ main{
     text-align: center;
     background-color: #223843;
     font-size: 30px;
-    color: white;
+    color: rgb(253, 245, 234);
+    padding: 10px;
 }
 
 /*----Servicios----*/
-.servicios1 h1{
-    text-align: center;
-    color: #223843;
+.servicios1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main section ul{
+.servicios1 .titulo-servicios{
     display: flex;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
+    color: #223843;
+    padding: 15px;
+}
+
+main section ul li a{
+    color: black
+}
+
+.titulo-granja h2{
+    text-align: center;
+    background-color: #223843;
+    font-size: 30px;
+    color: rgb(253, 245, 234);
     padding: 10px;
 }
 
@@ -370,7 +450,8 @@ main section ul{
     text-align: center;
     background-color: #223843;
     font-size: 30px;
-    color: white;
+    color: rgb(253, 245, 234);
+    padding: 10px;
 }
 
 .catalogo .producto-contenedor{
@@ -388,11 +469,20 @@ main section ul{
     box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
     -webkit-box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
     -moz-box-shadow: 10px 11px 21px 0px rgba(0,0,0,0.76);
+    border-radius: 11px;
 }
 
 .catalogo div img{
     width: 100%;
     height: 270px;
+}
+
+.catalogo div img{
+    border-top-left-radius: 10px;
+}
+
+.catalogo div img{
+    border-top-right-radius: 10px;
 }
 
 .catalogo div h3{
@@ -451,7 +541,7 @@ main section ul{
     --color: #5757577e;
 }
 
-.form-imput{
+.form-input{
     width: 100%;
     background: none;
     color: #706c6c;
@@ -463,13 +553,13 @@ main section ul{
 
 }
 
-.form-imput:focus,
-.form-imput:not(:placeholder-shown){
+.form-input:focus,
+.form-input:not(:placeholder-shown){
     color: #4d4646;
 }
 
-.form-imput:focus + .form-label,
-.form-imput:not(:placeholder-shown) + .form-label{
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
     color: #3866f2;
@@ -507,8 +597,8 @@ main section ul{
     transition: transform .4s;
 }
 
-.form-imput:focus + .form-line,
-.form-imput:not(:placeholder-shown) + .form-line{
+.form-input:focus + .form-line,
+.form-input:not(:placeholder-shown) + .form-line{
     transform: scale(1);
 }
 
@@ -527,13 +617,13 @@ main section ul{
 }
 
 .donde2{
-    padding: 50px;
+    padding-block-end: 50px;
 }
 /*---Hace tu pedido--*/
 .hacetupedido2{
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    padding-block-end: 50px;
 }
 
 .hacetupedido h1{
