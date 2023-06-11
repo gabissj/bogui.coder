@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&family=Assistant:wght@400;700&family=Hind+Vadodara:wght@400;600&family=Mate+SC&family=Poppins:wght@400;600&family=Sorts+Mill+Goudy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&family=Assistant:wght@400;700&family=Hind+Vadodara:wght@400;600&family=Mate+SC&family=Poppins:wght@400;600&family=Sorts+Mill+Goudy&display=swap");
 
 /*--------RESET---------*/
 *{
@@ -106,8 +107,7 @@ header nav{
 
 .sobre-nosotros button{
     background-color: black;
-    border-color: ;
-    height: 55px;
+    height: 55px;    
     width: 120px;
     border-radius: 15px;
     font-size: 15px;
@@ -248,16 +248,26 @@ h4{
 /*--------FOOTER--------*/
 
 footer{
+    width: 100%;
+    position: absolute;
     background-color: #223843;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 25px;
+    padding: 2rem 8%;
     color: white;
 }
 
 div .text-center{
     display: block;
+}
+
+div .redes{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-center{
@@ -271,13 +281,48 @@ div .text-center{
 
 .info{
     text-align: center;
+}
 
+.info h2{
+    width: 500px;
+    height: 40px;
+    font-family: 'Mate SC', serif;
+    color: rgb(253, 245, 234);
+    margin-block-end: 0;
 }
 
 .info a{
-    box-flex: 10px;
+    height: 38px;
+    width: 40px;
+    border: 1px solid #f2f2f2;
+    color: white;
+    border-radius: 5px;
+    background-image: url(../img/whatsapp2.png);
+    background-position: center;
+    background-size: 45%;
     padding: 10px;
-    margin: 10px;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.info a:nth-of-type(2){
+    background-image: url(../img/instagram.png);
+}
+
+.info a:nth-of-type(3){
+    background-image: url(../img/facebook.png);
+}
+
+.info a:nth-of-type(4){
+    background-image: url(../img/email.png) ;
+}
+
+.info a:nth-of-type(5){
+    background-image: url(../img/telefono.png) ;
+}
+
+.info a:nth-of-type(6){
+    background-image: url(../img/ubicacion.png) ;
 }
 
 p{
@@ -333,8 +378,20 @@ p{
         height: 400px;
     }
     .sobre-nosotros p{
-        width: 70%;
+        width: 80%;
+        font-size: 20px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .grid-galeria{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
     }
 }
 
@@ -373,7 +430,83 @@ p{
         font-size: 15px;
     }
 }
+/*---MEDIA QUERY SOBRE NOSOTROS---*/
+@media screen and (max-width: 1171px) {
+    .info-nos{
+        flex-direction: column;
+        padding: 50px;
+    }
+    .info-nos img{
+        width: 75%;
+        height: 100px;
+        text-align: center;
+        margin: 60px;
+    }
+    .info-nos div p{
+        width: 95%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    section .info-nos{
+        flex-direction: column;
+        padding: 40px;
+    }
+    section .info-nos img{
+        width: 85%;
+        height: 400px;
+        text-align: center;
+        margin: 60px;
+    }
+    .info-nos div p{
+        width: 700px;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:479px) {
+    section .info-nos{
+        flex-direction: column;
+        padding: 40px;
+    }
+    section .info-nos img{
+        width: 95%;
+        height: 300px;
+        text-align: center;
+        margin: 60px;
+    }
+    .info-nos div p{
+        width: 420px;
+        font-size: 13px;
+        text-align: center;
+        margin: 10px;
+    }
+}
+/*---MEDIA QUERY HACE TU PEDIDO---*/
+@media screen and (max-width: 1260px) {
+    form .form{
+        background-color: #ffff;
+        margin: auto;
+        max-width: 450px;
+        padding: 10em 10em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+        text-align: center;
+    }
+    div .ubicacion{
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        background-color: #223843;
+        font-size: 30px;
+        color: rgb(253, 245, 234);
+        padding: 10px;
+    }
+}
 /*---Sobre Nosotros---*/
 main{
     background-color: rgb(253, 245, 234);
@@ -396,14 +529,28 @@ main{
 .info-nos{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.info-nos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-nos{
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 .info-nos p{
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 20px;
-    width: 45%;
+    width: 85%;
     margin: 50px;
 }
 
@@ -425,17 +572,30 @@ main{
 .servicios1{
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
+}
+
+.servicios1 .items{
+    position: absolute;
+    left: 0;
+    padding-top: 7px;
 }
 
 .servicios1 .titulo-servicios{
     display: flex;
     color: #223843;
-    padding: 15px;
+    padding: 30px;
 }
 
 main section ul li a{
-    color: black
+    color: #223843;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-block-start: -2px;
+    margin-block-end: -2px;
+    margin-inline-start: -20px;
+    margin-inline-end: 0px;
 }
 
 .titulo-granja h2{
@@ -515,6 +675,7 @@ main section ul li a{
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
     text-align: center;
 }
+
 
 .form-title{
     font-size: 2.5rem;
@@ -612,10 +773,6 @@ main section ul li a{
     padding: 10px;
 }
 
-.ubicacion p{
-
-}
-
 .donde2{
     padding-block-end: 50px;
 }
@@ -633,8 +790,14 @@ main section ul li a{
     padding: 30px;
 }
 
+.ubicacion iframe{
+    margin-block-end: 40px;
+}
+
 .ubicacion{
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
 }
