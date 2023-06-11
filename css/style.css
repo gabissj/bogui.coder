@@ -487,24 +487,166 @@ p{
     }
 }
 /*---MEDIA QUERY HACE TU PEDIDO---*/
-@media screen and (max-width: 1260px) {
-    form .form{
-        background-color: #ffff;
-        margin: auto;
-        max-width: 450px;
-        padding: 10em 10em;
-        border-radius: 10px;
-        box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-        text-align: center;
-    }
-    div .ubicacion{
+@media screen and (max-width: 767px) {
+    .form{
         display: flex;
         justify-content: center;
+        text-align: center;
+    }
+    
+    .form-account{
+        max-width: 600px;
+        padding: 1em 1em;
+        border-radius: 10px;
+    }
+
+    .form-input{
+        width: 100%;
+        background: none;
+        color: #706c6c;
+        font-size: 1.2rem;
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color);
+    
+    }
+
+    .hacetupedido2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ubicacion h2{
+        width: 50%;
+    }
+    .ubicacion iframe{
+        width: 680px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .form-account{
+        width: 90%;
+        height: 70%;
+        padding: 1px 1px;
+        padding-block-end: 20px;
+        border-radius: 5px;
+    }
+    div .form-container{
+        margin-top: 3em;
+        display: grid;
+        gap: 1.5em;
+    }
+
+    div .form-input{
         width: 200px;
-        background-color: #223843;
-        font-size: 30px;
-        color: rgb(253, 245, 234);
-        padding: 10px;
+        background: none;
+        color: #706c6c;
+        font-size: 1.5rem;
+        padding: 5px 5px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color);
+        justify-content: center;
+    }
+
+    .hacetupedido2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ubicacion h2{
+        width: 40%;
+    }
+    .ubicacion iframe{
+        width: 440px;
+        height: 300px;
+    }
+    .ubicacion p{
+        width: 80%;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/*---MEDIA QUERY DONDE NOS ENCONTRAMOS---*/
+@media screen and (max-width: 767px) {
+    .form-account{
+        max-width: 600px;
+        padding: 1em 1em;
+        border-radius: 10px;
+    }
+
+    .form-input{
+        width: 100%;
+        background: none;
+        color: #706c6c;
+        font-size: 1.2rem;
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color);
+    }
+
+    .donde2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ubicacion h2{
+        width: 50%;
+    }
+    .ubicacion iframe{
+        width: 680px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .form{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .form-account{
+        width: 90%;
+        height: 70%;
+        padding: 1px 1px;
+        padding-block-end: 20px;
+        border-radius: 5px;
+    }
+    div .form-container{
+        margin-top: 3em;
+        display: grid;
+        gap: 1.5em;
+    }
+
+    div .form-input{
+        width: 200px;
+        background: none;
+        color: #706c6c;
+        font-size: 1.5rem;
+        padding: 5px 5px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color);
+        justify-content: center;
+    }
+
+    .hacetupedido2{
+        flex-direction: column;
+    }
+    .ubicacion h2{
+        width: 50%;
+    }
+    .ubicacion iframe{
+        width: 440px;
+        height: 300px;
+    }
+    .ubicacion p{
+        width: 80%;
+        font-size: 15px;
+        text-align: center;
     }
 }
 /*---Sobre Nosotros---*/
@@ -667,15 +809,17 @@ main section ul li a{
 }
 
 .form{
+    display: flex;
     background-color: #ffff;
     margin: auto;
-    max-width: 900px;
+    max-width: 600px;
+    max-height: 900;
     padding: 10em 10em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 .form-title{
     font-size: 2.5rem;
@@ -711,7 +855,7 @@ main section ul li a{
     border: none;
     outline: none;
     border-bottom: 1px solid var(--color);
-
+    justify-content: center;
 }
 
 .form-input:focus,
@@ -798,6 +942,4 @@ main section ul li a{
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
 }
